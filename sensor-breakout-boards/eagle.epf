@@ -7,6 +7,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/home/ben/Documents/2015-03-29-Sensor-Breakout-Boards/sensor-breakout-boards.lbr"
 UsedLibrary="/home/ben/.eagle/lbr/19inch.lbr"
 UsedLibrary="/home/ben/.eagle/lbr/40xx.lbr"
 UsedLibrary="/home/ben/.eagle/lbr/41xx.lbr"
@@ -341,11 +342,10 @@ UsedLibrary="/home/ben/.eagle/lbr/xilinx-xc9.lbr"
 UsedLibrary="/home/ben/.eagle/lbr/xilinx-xcv.lbr"
 UsedLibrary="/home/ben/.eagle/lbr/zetex.lbr"
 UsedLibrary="/home/ben/.eagle/lbr/zilog.lbr"
-UsedLibrary="/home/ben/Documents/2015-03-29-Sensor-Breakout-Boards/sensor-breakout-boards.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="44 14 643 413"
+Loc="65 24 664 423"
 State=1
 Number=0
 

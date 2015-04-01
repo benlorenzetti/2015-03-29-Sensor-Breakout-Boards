@@ -60,28 +60,10 @@
 <wire x1="24" y1="0" x2="24" y2="30" width="0" layer="20"/>
 <wire x1="24" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
-<text x="7" y="19.75" size="1.27" layer="21">EmStat/MUX</text>
-<text x="5.25" y="10" size="1.016" layer="21">CE</text>
-<text x="8.5" y="10" size="1.016" layer="21">WE1</text>
-<text x="12.75" y="10" size="1.016" layer="21">RE</text>
-<text x="16.25" y="10" size="1.016" layer="21">WE2</text>
 </plain>
 <libraries>
 <library name="sensor-breakout-boards">
 <packages>
-<package name="TE_CONNECTIVITY_292303-1">
-<pad name="2" x="-1" y="2.71" drill="1"/>
-<pad name="3" x="1" y="2.71" drill="1"/>
-<pad name="4" x="3.5" y="2.71" drill="1"/>
-<pad name="1" x="-3.5" y="2.71" drill="1"/>
-<pad name="CHAS@1" x="-6.57" y="0" drill="2.4"/>
-<pad name="CHAS@2" x="6.57" y="0" drill="2.4"/>
-<wire x1="-6.57" y1="3.72" x2="6.57" y2="3.72" width="0.127" layer="51"/>
-<wire x1="6.57" y1="3.72" x2="6.57" y2="-10.28" width="0.127" layer="51"/>
-<wire x1="6.57" y1="-10.28" x2="-6.57" y2="-10.28" width="0.127" layer="51"/>
-<wire x1="-6.57" y1="-10.28" x2="-6.57" y2="3.72" width="0.127" layer="51"/>
-<text x="-6" y="5" size="2" layer="25" font="vector">&gt;Name</text>
-</package>
 <package name="MOLEX_0548190519">
 <pad name="1" x="5.05" y="1.6" drill="0.7"/>
 <pad name="2" x="3.85" y="0.8" drill="0.7"/>
@@ -96,6 +78,19 @@
 <wire x1="5.05" y1="3.85" x2="-3.75" y2="3.85" width="0.127" layer="51"/>
 <text x="7" y="5" size="2" layer="25" font="vector" rot="R270">&gt;Name</text>
 <wire x1="-1.75" y1="6" x2="-1.75" y2="-6" width="0.127" layer="51"/>
+</package>
+<package name="TE_CONNECTIVITY_292303-1">
+<pad name="2" x="-1" y="2.71" drill="1"/>
+<pad name="3" x="1" y="2.71" drill="1"/>
+<pad name="4" x="3.5" y="2.71" drill="1"/>
+<pad name="1" x="-3.5" y="2.71" drill="1"/>
+<pad name="CHAS@1" x="-6.57" y="0" drill="2.4"/>
+<pad name="CHAS@2" x="6.57" y="0" drill="2.4"/>
+<wire x1="-6.57" y1="3.72" x2="6.57" y2="3.72" width="0.127" layer="51"/>
+<wire x1="6.57" y1="3.72" x2="6.57" y2="-10.28" width="0.127" layer="51"/>
+<wire x1="6.57" y1="-10.28" x2="-6.57" y2="-10.28" width="0.127" layer="51"/>
+<wire x1="-6.57" y1="-10.28" x2="-6.57" y2="3.72" width="0.127" layer="51"/>
+<text x="-6" y="5" size="2" layer="25" font="vector">&gt;Name</text>
 </package>
 <package name="M2-MOUNTING-HOLE">
 <hole x="0" y="0" drill="2"/>
@@ -141,7 +136,7 @@ design rules under a new name.</description>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="20mil"/>
-<param name="mdDrill" value="13mil"/>
+<param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
 <param name="msDrill" value="24mil"/>
@@ -288,53 +283,45 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="Type-A Receptacle" x="12" y="5" smashed="yes">
-<attribute name="NAME" x="1" y="1" size="2" layer="25" font="vector"/>
-</element>
-<element name="X2" library="sensor-breakout-boards" package="MOLEX_0548190519" value="Micro Type-B Receptacle" x="12" y="28" smashed="yes" rot="R270">
-<attribute name="NAME" x="23" y="29" size="2" layer="25" font="vector" rot="R180"/>
-</element>
+<element name="MICRO-TYPE-B-RECEPTACLE" library="sensor-breakout-boards" package="MOLEX_0548190519" value="" x="12" y="28" rot="R270"/>
+<element name="TYPE-A-RECEPTACLE" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="" x="12" y="4"/>
 <element name="MOUNTING1" library="sensor-breakout-boards" package="M2-MOUNTING-HOLE" value="M2-MOUNTING-HOLE" x="20" y="15"/>
 <element name="MOUNTING2" library="sensor-breakout-boards" package="M2-MOUNTING-HOLE" value="M2-MOUNTING-HOLE" x="4" y="15"/>
 </elements>
 <signals>
-<signal name="CE">
-<contactref element="X1" pad="1"/>
-<contactref element="X2" pad="1"/>
-<wire x1="13.6" y1="22.95" x2="13.7" y2="22.95" width="0.6096" layer="16"/>
-<wire x1="13.7" y1="22.95" x2="14.5" y2="23.75" width="0.6096" layer="16"/>
-<wire x1="14.5" y1="23.75" x2="14.5" y2="24.75" width="0.6096" layer="16"/>
-<wire x1="14.5" y1="24.75" x2="12.5" y2="26.75" width="0.6096" layer="16"/>
-<wire x1="12.5" y1="26.75" x2="10.25" y2="26.75" width="0.6096" layer="16"/>
-<wire x1="10.25" y1="26.75" x2="7.5" y2="24" width="0.6096" layer="16"/>
-<wire x1="7.5" y1="24" x2="7.5" y2="15.75" width="0.6096" layer="16"/>
-<wire x1="7.5" y1="15.75" x2="8.5" y2="14.75" width="0.6096" layer="16"/>
-<wire x1="8.5" y1="14.75" x2="8.5" y2="7.71" width="0.6096" layer="16"/>
+<signal name="RE">
+<contactref element="MICRO-TYPE-B-RECEPTACLE" pad="1"/>
+<contactref element="TYPE-A-RECEPTACLE" pad="3"/>
+<wire x1="13.6" y1="22.95" x2="13.6" y2="11.6" width="0.6096" layer="1"/>
+<wire x1="13.6" y1="11.6" x2="13" y2="11" width="0.6096" layer="1"/>
+<wire x1="13" y1="11" x2="13" y2="6.71" width="0.6096" layer="1"/>
 </signal>
 <signal name="WE1">
-<contactref element="X2" pad="2"/>
-<contactref element="X1" pad="2"/>
-<wire x1="12.8" y1="24.15" x2="12.8" y2="24.45" width="0.6096" layer="16"/>
-<wire x1="12.8" y1="24.45" x2="11.75" y2="25.5" width="0.6096" layer="16"/>
-<wire x1="11.75" y1="25.5" x2="10.75" y2="25.5" width="0.6096" layer="16"/>
-<wire x1="10.75" y1="25.5" x2="9" y2="23.75" width="0.6096" layer="16"/>
-<wire x1="9" y1="23.75" x2="9" y2="16.5" width="0.6096" layer="16"/>
-<wire x1="9" y1="16.5" x2="11" y2="14.5" width="0.6096" layer="16"/>
-<wire x1="11" y1="14.5" x2="11" y2="7.71" width="0.6096" layer="16"/>
-</signal>
-<signal name="RE">
-<contactref element="X2" pad="3"/>
-<contactref element="X1" pad="3"/>
-<wire x1="12" y1="22.95" x2="12" y2="18" width="0.6096" layer="16"/>
-<wire x1="12" y1="18" x2="13" y2="17" width="0.6096" layer="16"/>
-<wire x1="13" y1="17" x2="13" y2="7.71" width="0.6096" layer="16"/>
+<contactref element="MICRO-TYPE-B-RECEPTACLE" pad="2"/>
+<contactref element="TYPE-A-RECEPTACLE" pad="2"/>
+<wire x1="12.8" y1="24.15" x2="12.8" y2="24.95" width="0.6096" layer="16"/>
+<wire x1="12.8" y1="24.95" x2="12" y2="25.75" width="0.6096" layer="16"/>
+<wire x1="12" y1="25.75" x2="10.25" y2="25.75" width="0.6096" layer="16"/>
+<wire x1="10.25" y1="25.75" x2="8.75" y2="24.25" width="0.6096" layer="16"/>
+<wire x1="8.75" y1="24.25" x2="8.75" y2="11.5" width="0.6096" layer="16"/>
+<wire x1="8.75" y1="11.5" x2="11" y2="9.25" width="0.6096" layer="16"/>
+<wire x1="11" y1="9.25" x2="11" y2="6.71" width="0.6096" layer="16"/>
 </signal>
 <signal name="WE2">
-<contactref element="X2" pad="5"/>
-<contactref element="X1" pad="4"/>
-<wire x1="10.4" y1="22.95" x2="10.4" y2="17.1" width="0.6096" layer="1"/>
-<wire x1="10.4" y1="17.1" x2="15.5" y2="12" width="0.6096" layer="1"/>
-<wire x1="15.5" y1="12" x2="15.5" y2="7.71" width="0.6096" layer="1"/>
+<contactref element="MICRO-TYPE-B-RECEPTACLE" pad="3"/>
+<contactref element="TYPE-A-RECEPTACLE" pad="4"/>
+<via x="12" y="18.5" extent="1-16" drill="0.6"/>
+<wire x1="12" y1="22.95" x2="12" y2="18.5" width="0.6096" layer="1"/>
+<wire x1="12" y1="18.5" x2="12" y2="15.5" width="0.6096" layer="16"/>
+<wire x1="12" y1="15.5" x2="15.5" y2="12" width="0.6096" layer="16"/>
+<wire x1="15.5" y1="12" x2="15.5" y2="6.71" width="0.6096" layer="16"/>
+</signal>
+<signal name="CE">
+<contactref element="MICRO-TYPE-B-RECEPTACLE" pad="5"/>
+<contactref element="TYPE-A-RECEPTACLE" pad="1"/>
+<wire x1="10.4" y1="22.95" x2="10.4" y2="11.9" width="0.6096" layer="1"/>
+<wire x1="10.4" y1="11.9" x2="8.5" y2="10" width="0.6096" layer="1"/>
+<wire x1="8.5" y1="10" x2="8.5" y2="6.71" width="0.6096" layer="1"/>
 </signal>
 </signals>
 </board>

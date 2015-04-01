@@ -238,7 +238,7 @@
 <label x="35.56" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="WE1" class="0">
+<net name="WE2" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="2DATA-"/>
 <wire x1="45.72" y1="60.96" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
@@ -248,7 +248,7 @@
 <label x="43.18" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="WE2" class="0">
+<net name="WE1" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="3DATA+"/>
 <wire x1="50.8" y1="60.96" x2="50.8" y2="45.72" width="0.1524" layer="91"/>

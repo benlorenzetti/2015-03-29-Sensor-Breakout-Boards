@@ -60,6 +60,11 @@
 <wire x1="24" y1="0" x2="24" y2="30" width="0" layer="20"/>
 <wire x1="24" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
+<text x="7" y="19.75" size="1.27" layer="21">EmStat/MUX</text>
+<text x="5.25" y="10" size="1.016" layer="21">CE</text>
+<text x="8.5" y="10" size="1.016" layer="21">WE2</text>
+<text x="12.75" y="10" size="1.016" layer="21">RE</text>
+<text x="16.25" y="10" size="1.016" layer="21">WE1</text>
 </plain>
 <libraries>
 <library name="sensor-breakout-boards">
@@ -283,9 +288,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="Type-A Receptacle" x="12" y="5" smashed="yes">
-<attribute name="NAME" x="1" y="1" size="2" layer="25" font="vector"/>
-</element>
+<element name="X1" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="Type-A Receptacle" x="12" y="5" smashed="yes"/>
 <element name="X2" library="sensor-breakout-boards" package="MOLEX_0548190519" value="Micro Type-B Receptacle" x="12" y="28" smashed="yes" rot="R270">
 <attribute name="NAME" x="23" y="29" size="2" layer="25" font="vector" rot="R180"/>
 </element>
@@ -306,7 +309,7 @@ design rules under a new name.</description>
 <wire x1="7.5" y1="15.75" x2="8.5" y2="14.75" width="0.6096" layer="16"/>
 <wire x1="8.5" y1="14.75" x2="8.5" y2="7.71" width="0.6096" layer="16"/>
 </signal>
-<signal name="WE1">
+<signal name="WE2">
 <contactref element="X2" pad="2"/>
 <contactref element="X1" pad="2"/>
 <wire x1="12.8" y1="24.15" x2="12.8" y2="24.45" width="0.6096" layer="16"/>
@@ -324,7 +327,7 @@ design rules under a new name.</description>
 <wire x1="12" y1="18" x2="13" y2="17" width="0.6096" layer="16"/>
 <wire x1="13" y1="17" x2="13" y2="7.71" width="0.6096" layer="16"/>
 </signal>
-<signal name="WE2">
+<signal name="WE1">
 <contactref element="X2" pad="5"/>
 <contactref element="X1" pad="4"/>
 <wire x1="10.4" y1="22.95" x2="10.4" y2="17.1" width="0.6096" layer="1"/>
