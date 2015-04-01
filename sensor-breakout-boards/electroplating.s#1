@@ -224,7 +224,7 @@
 <junction x="27.94" y="53.34"/>
 </segment>
 </net>
-<net name="WE1" class="0">
+<net name="WE2" class="0">
 <segment>
 <wire x1="43.18" y1="58.42" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="2DATA-"/>
@@ -239,7 +239,7 @@
 <junction x="43.18" y="53.34"/>
 </segment>
 </net>
-<net name="WE2" class="0">
+<net name="WE1" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="4GND"/>
 <wire x1="58.42" y1="38.1" x2="58.42" y2="15.24" width="0.1524" layer="91"/>

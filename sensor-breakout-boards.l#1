@@ -269,7 +269,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="2-PIN-CONNECTOR">
+<deviceset name="2-PIN-CONNECTOR" prefix="X">
 <description>&lt;h1&gt;2-Pin, 0.1", Male Header&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;3M Part Number:&lt;/li&gt;
@@ -281,7 +281,11 @@
 <gate name="G$1" symbol="2-PIN-CONNECTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="2-PIN-HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

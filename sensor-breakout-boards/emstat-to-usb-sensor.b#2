@@ -289,9 +289,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="X1" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="Type-A Receptacle" x="12" y="5" smashed="yes"/>
-<element name="X2" library="sensor-breakout-boards" package="MOLEX_0548190519" value="Micro Type-B Receptacle" x="12" y="28" smashed="yes" rot="R270">
-<attribute name="NAME" x="23" y="29" size="2" layer="25" font="vector" rot="R180"/>
-</element>
+<element name="X2" library="sensor-breakout-boards" package="MOLEX_0548190519" value="Micro Type-B Receptacle" x="12" y="28" smashed="yes" rot="R270"/>
 <element name="MOUNTING1" library="sensor-breakout-boards" package="M2-MOUNTING-HOLE" value="M2-MOUNTING-HOLE" x="20" y="15"/>
 <element name="MOUNTING2" library="sensor-breakout-boards" package="M2-MOUNTING-HOLE" value="M2-MOUNTING-HOLE" x="4" y="15"/>
 </elements>

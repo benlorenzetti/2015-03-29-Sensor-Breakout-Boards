@@ -72,7 +72,7 @@
 <text x="-6" y="5" size="2" layer="25" font="vector">&gt;Name</text>
 </package>
 <package name="M2-MOUNTING-HOLE">
-<hole x="0" y="0" drill="2"/>
+<hole x="0" y="0" drill="2.31"/>
 </package>
 <package name="2-PIN-HEADER">
 <pad name="1" x="0" y="0" drill="1" shape="square"/>

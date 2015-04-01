@@ -60,6 +60,11 @@
 <wire x1="24" y1="0" x2="24" y2="30" width="0" layer="20"/>
 <wire x1="24" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
+<text x="7" y="19.75" size="1.27" layer="21">EmStat/MUX</text>
+<text x="4.5" y="10.75" size="1.27" layer="21">CE</text>
+<text x="8.5" y="10.75" size="1.27" layer="21">WE1</text>
+<text x="13.25" y="10.75" size="1.27" layer="21">RE</text>
+<text x="17.25" y="10.75" size="1.27" layer="21">WE2</text>
 </plain>
 <libraries>
 <library name="sensor-breakout-boards">

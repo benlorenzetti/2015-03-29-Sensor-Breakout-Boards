@@ -62,9 +62,9 @@
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
 <text x="1" y="23.5" size="1.016" layer="21">WaveNow</text>
 <text x="5.25" y="8.5" size="1.016" layer="21">CE</text>
-<text x="8.5" y="8.5" size="1.016" layer="21">WE1</text>
+<text x="8.5" y="8.5" size="1.016" layer="21">WE2</text>
 <text x="12.5" y="8.5" size="1.016" layer="21">RE</text>
-<text x="15.5" y="8.5" size="1.016" layer="21">WE2</text>
+<text x="15.5" y="8.5" size="1.016" layer="21">WE1</text>
 </plain>
 <libraries>
 <library name="sensor-breakout-boards">
@@ -288,12 +288,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X2" library="sensor-breakout-boards" package="MOLEX_0548190519" value="Micro Type-B Receptacle" x="12" y="28" smashed="yes" rot="R270">
-<attribute name="NAME" x="23" y="29" size="2" layer="25" font="vector" rot="R180"/>
-</element>
-<element name="X1" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="Type-A Receptacle" x="12" y="4" smashed="yes">
-<attribute name="NAME" x="0.75" y="0.5" size="2" layer="25" font="vector"/>
-</element>
+<element name="X2" library="sensor-breakout-boards" package="MOLEX_0548190519" value="Micro Type-B Receptacle" x="12" y="28" smashed="yes" rot="R270"/>
+<element name="X1" library="sensor-breakout-boards" package="TE_CONNECTIVITY_292303-1" value="Type-A Receptacle" x="12" y="4" smashed="yes"/>
 <element name="MOUNTING1" library="sensor-breakout-boards" package="M2-MOUNTING-HOLE" value="M2-MOUNTING-HOLE" x="20" y="15"/>
 <element name="MOUNTING2" library="sensor-breakout-boards" package="M2-MOUNTING-HOLE" value="M2-MOUNTING-HOLE" x="4" y="15"/>
 </elements>

@@ -87,7 +87,7 @@
 <wire x1="-1.75" y1="6" x2="-1.75" y2="-6" width="0.127" layer="51"/>
 </package>
 <package name="M2-MOUNTING-HOLE">
-<hole x="0" y="0" drill="2"/>
+<hole x="0" y="0" drill="2.31"/>
 </package>
 </packages>
 <symbols>

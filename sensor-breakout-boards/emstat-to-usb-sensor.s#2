@@ -77,13 +77,14 @@
 <pad name="3" x="5.05" y="0" drill="0.7"/>
 <pad name="4" x="3.85" y="-0.8" drill="0.7"/>
 <pad name="5" x="5.05" y="-1.6" drill="0.7"/>
-<pad name="CHAS@1" x="0" y="3.65" drill="1.9"/>
-<pad name="CHAS@2" x="0" y="-3.65" drill="1.9"/>
+<pad name="CHAS@1" x="0" y="3.65" drill="1.9" diameter="2.54"/>
+<pad name="CHAS@2" x="0" y="-3.65" drill="1.9" diameter="2.54"/>
 <wire x1="-3.75" y1="3.85" x2="-3.75" y2="-3.85" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="-3.85" x2="5.05" y2="-3.85" width="0.127" layer="51"/>
 <wire x1="5.05" y1="-3.85" x2="5.05" y2="3.85" width="0.127" layer="51"/>
 <wire x1="5.05" y1="3.85" x2="-3.75" y2="3.85" width="0.127" layer="51"/>
 <text x="7" y="5" size="2" layer="25" font="vector" rot="R270">&gt;Name</text>
+<wire x1="-1.75" y1="6" x2="-1.75" y2="-6" width="0.127" layer="51"/>
 </package>
 <package name="M2-MOUNTING-HOLE">
 <hole x="0" y="0" drill="2"/>
