@@ -345,10 +345,10 @@ UsedLibrary="/home/ben/Documents/2015-03-29-Sensor-Breakout-Boards/sensor-breako
 
 [Win_1]
 Type="Control Panel"
-Loc="469 14 1068 413"
+Loc="44 14 643 413"
 State=1
 Number=0
 
 [Desktop]
-Screen="1366 768"
+Screen="1600 900"
 Window="Win_1"

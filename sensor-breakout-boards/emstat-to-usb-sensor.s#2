@@ -85,6 +85,9 @@
 <wire x1="5.05" y1="3.85" x2="-3.75" y2="3.85" width="0.127" layer="51"/>
 <text x="7" y="5" size="2" layer="25" font="vector" rot="R270">&gt;Name</text>
 </package>
+<package name="M2-MOUNTING-HOLE">
+<hole x="0" y="0" drill="2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-TYPE-A-RECEPTACLE">
@@ -128,6 +131,10 @@
 <circle x="0" y="0" radius="0.254" width="0.254" layer="94"/>
 <circle x="5.08" y="0" radius="0.254" width="0.254" layer="94"/>
 <circle x="10.16" y="0" radius="0.254" width="0.254" layer="94"/>
+</symbol>
+<symbol name="M2-MOUNTING-HOLE">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="5.08" size="2.54" layer="95" font="vector">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -178,6 +185,18 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="M2-MOUNTING-HOLE">
+<gates>
+<gate name="G$1" symbol="M2-MOUNTING-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M2-MOUNTING-HOLE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -192,18 +211,62 @@
 <parts>
 <part name="X1" library="sensor-breakout-boards" deviceset="USB-TYPE-A-RECEPTACLE" device="" value="Type-A Receptacle"/>
 <part name="X2" library="sensor-breakout-boards" deviceset="USB-MICRO-TYPE-B-RECEPTACLE" device="" value="Micro Type-B Receptacle"/>
+<part name="MOUNTING1" library="sensor-breakout-boards" deviceset="M2-MOUNTING-HOLE" device=""/>
+<part name="MOUNTING2" library="sensor-breakout-boards" deviceset="M2-MOUNTING-HOLE" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="X1" gate="G$1" x="35.56" y="17.78"/>
-<instance part="X2" gate="G$1" x="35.56" y="55.88"/>
+<instance part="X1" gate="G$1" x="43.18" y="17.78"/>
+<instance part="X2" gate="G$1" x="43.18" y="55.88"/>
+<instance part="MOUNTING1" gate="G$1" x="7.62" y="33.02"/>
+<instance part="MOUNTING2" gate="G$1" x="76.2" y="33.02"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="CE" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="1VCC"/>
+<wire x1="35.56" y1="17.78" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="1VCC"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<label x="27.94" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="WE1" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="2DATA-"/>
+<wire x1="38.1" y1="55.88" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="2DATA-"/>
+<wire x1="38.1" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="35.56" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<label x="38.1" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RE" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="3DATA+"/>
+<wire x1="43.18" y1="55.88" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="3DATA+"/>
+<wire x1="43.18" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="40.64" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
+<label x="45.72" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="WE2" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="5GND"/>
+<wire x1="53.34" y1="55.88" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="4GND"/>
+<wire x1="53.34" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="35.56" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
+<label x="55.88" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

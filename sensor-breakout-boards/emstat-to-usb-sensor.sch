@@ -77,13 +77,14 @@
 <pad name="3" x="5.05" y="0" drill="0.7"/>
 <pad name="4" x="3.85" y="-0.8" drill="0.7"/>
 <pad name="5" x="5.05" y="-1.6" drill="0.7"/>
-<pad name="CHAS@1" x="0" y="3.65" drill="1.9"/>
-<pad name="CHAS@2" x="0" y="-3.65" drill="1.9"/>
+<pad name="CHAS@1" x="0" y="3.65" drill="1.9" diameter="2.54"/>
+<pad name="CHAS@2" x="0" y="-3.65" drill="1.9" diameter="2.54"/>
 <wire x1="-3.75" y1="3.85" x2="-3.75" y2="-3.85" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="-3.85" x2="5.05" y2="-3.85" width="0.127" layer="51"/>
 <wire x1="5.05" y1="-3.85" x2="5.05" y2="3.85" width="0.127" layer="51"/>
 <wire x1="5.05" y1="3.85" x2="-3.75" y2="3.85" width="0.127" layer="51"/>
 <text x="7" y="5" size="2" layer="25" font="vector" rot="R270">&gt;Name</text>
+<wire x1="-1.75" y1="6" x2="-1.75" y2="-6" width="0.127" layer="51"/>
 </package>
 <package name="M2-MOUNTING-HOLE">
 <hole x="0" y="0" drill="2"/>
@@ -227,40 +228,44 @@
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="CE" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="1VCC"/>
-<wire x1="35.56" y1="17.78" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="35.56" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="17.78" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="X2" gate="G$1" pin="1VCC"/>
-<wire x1="33.02" y1="35.56" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<label x="27.94" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="WE1" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="2DATA-"/>
-<wire x1="38.1" y1="55.88" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="55.88" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="2DATA-"/>
-<wire x1="38.1" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="38.1" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="35.56" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<label x="38.1" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="RE" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="3DATA+"/>
 <wire x1="43.18" y1="55.88" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="3DATA+"/>
 <wire x1="43.18" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="40.64" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
+<label x="45.72" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="WE2" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="5GND"/>
 <wire x1="53.34" y1="55.88" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="4GND"/>
 <wire x1="53.34" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
+<label x="53.34" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
