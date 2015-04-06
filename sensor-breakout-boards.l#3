@@ -148,11 +148,12 @@
 <wire x1="-1.85" y1="3" x2="-24.13" y2="3" width="0.127" layer="51"/>
 <text x="-24.13" y="5.08" size="2.54" layer="21" font="vector">&gt;Name</text>
 </package>
-<package name="4-PIN-HEADER">
-<pad name="VCC" x="-3.81" y="0" drill="1.1"/>
-<pad name="D-" x="-1.27" y="0" drill="1.1"/>
-<pad name="D+" x="1.27" y="0" drill="1.1"/>
-<pad name="GND" x="3.81" y="0" drill="1.1"/>
+<package name="5-PIN-HEADER">
+<pad name="1" x="-5.08" y="0" drill="1.1"/>
+<pad name="2" x="-2.54" y="0" drill="1.1"/>
+<pad name="3" x="0" y="0" drill="1.1"/>
+<pad name="4" x="2.54" y="0" drill="1.1"/>
+<pad name="5" x="5.08" y="0" drill="1.1"/>
 </package>
 </packages>
 <symbols>

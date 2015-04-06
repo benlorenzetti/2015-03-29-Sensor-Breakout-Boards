@@ -154,6 +154,7 @@
 <pad name="3" x="0" y="0" drill="1.1"/>
 <pad name="4" x="2.54" y="0" drill="1.1"/>
 <pad name="5" x="5.08" y="0" drill="1.1"/>
+<text x="-6.35" y="2.54" size="2.54" layer="25" font="vector">&gt;Name</text>
 </package>
 </packages>
 <symbols>
