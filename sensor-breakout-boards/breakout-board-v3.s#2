@@ -546,12 +546,17 @@ EmStat</text>
 <part name="X3" library="sensor-breakout-boards" deviceset="USB-TYPE-A-RECEPTACLE" device="" value="Sensor 3"/>
 <part name="X4" library="sensor-breakout-boards" deviceset="USB-TYPE-A-RECEPTACLE" device="" value="Sensor 4"/>
 <part name="X5" library="sensor-breakout-boards" deviceset="34-PIN-CONNECTOR" device="" value="Multiplexer_CON1"/>
-<part name="X6" library="sensor-breakout-boards" deviceset="USB-MICRO-TYPE-B-RECEPTACLE" device="" value="EmStat--Computer"/>
+<part name="X6" library="sensor-breakout-boards" deviceset="USB-MICRO-TYPE-B-RECEPTACLE" device=""/>
 <part name="X7" library="sensor-breakout-boards" deviceset="EMSTAT-USB-CABLE" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="264.16" y="93.98" size="1.778" layer="97" font="vector">Use mini USB cable kit
+to connect EmStat's PC
+link to the breakout board</text>
+<text x="294.64" y="38.1" size="1.778" layer="97" font="vector">Outward-facing mini USB
+on breakout board</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="33.02" y="15.24" smashed="yes">
@@ -575,10 +580,13 @@ EmStat</text>
 <attribute name="VALUE" x="81.28" y="78.74" size="2.1844" layer="96" font="vector"/>
 </instance>
 <instance part="X6" gate="G$1" x="307.34" y="55.88" smashed="yes">
-<attribute name="NAME" x="289.56" y="66.04" size="2.54" layer="95" font="vector"/>
-<attribute name="VALUE" x="292.1" y="38.1" size="2.54" layer="96" font="vector"/>
+<attribute name="NAME" x="284.48" y="38.1" size="2.54" layer="95" font="vector"/>
+<attribute name="VALUE" x="307.34" y="66.04" size="2.54" layer="96" font="vector"/>
 </instance>
-<instance part="X7" gate="G$1" x="233.68" y="81.28"/>
+<instance part="X7" gate="G$1" x="233.68" y="81.28" smashed="yes">
+<attribute name="NAME" x="256.54" y="93.98" size="2.54" layer="95" font="vector"/>
+<attribute name="VALUE" x="248.92" y="93.98" size="2.54" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>

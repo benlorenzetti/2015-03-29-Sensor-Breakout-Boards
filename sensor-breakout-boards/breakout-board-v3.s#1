@@ -554,8 +554,9 @@ EmStat</text>
 <plain>
 <text x="264.16" y="93.98" size="1.778" layer="97" font="vector">Use mini USB cable kit
 to connect EmStat's PC
-link to the breakout board</text>
-<text x="294.64" y="38.1" size="1.778" layer="97" font="vector">Outward-facing mini USB
+link to breakout board's
+5-pin header</text>
+<text x="292.1" y="38.1" size="1.778" layer="97" font="vector">Outward-facing mini USB
 on breakout board</text>
 </plain>
 <instances>

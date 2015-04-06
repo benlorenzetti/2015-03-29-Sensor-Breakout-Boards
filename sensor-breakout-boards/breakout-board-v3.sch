@@ -552,11 +552,11 @@ EmStat</text>
 <sheets>
 <sheet>
 <plain>
-<text x="264.16" y="93.98" size="1.778" layer="97" font="vector">Use mini USB cable kit
+<text x="96.52" y="210.82" size="1.778" layer="97" font="vector">Use mini USB cable kit
 to connect EmStat's PC
 link to breakout board's
 5-pin header</text>
-<text x="292.1" y="38.1" size="1.778" layer="97" font="vector">Outward-facing mini USB
+<text x="124.46" y="154.94" size="1.778" layer="97" font="vector">Outward-facing mini USB
 on breakout board</text>
 </plain>
 <instances>
@@ -580,13 +580,13 @@ on breakout board</text>
 <attribute name="NAME" x="91.44" y="83.82" size="2.54" layer="95" font="vector"/>
 <attribute name="VALUE" x="81.28" y="78.74" size="2.1844" layer="96" font="vector"/>
 </instance>
-<instance part="X6" gate="G$1" x="307.34" y="55.88" smashed="yes">
-<attribute name="NAME" x="284.48" y="38.1" size="2.54" layer="95" font="vector"/>
-<attribute name="VALUE" x="307.34" y="66.04" size="2.54" layer="96" font="vector"/>
+<instance part="X6" gate="G$1" x="139.7" y="172.72" smashed="yes">
+<attribute name="NAME" x="116.84" y="154.94" size="2.54" layer="95" font="vector"/>
+<attribute name="VALUE" x="139.7" y="182.88" size="2.54" layer="96" font="vector"/>
 </instance>
-<instance part="X7" gate="G$1" x="233.68" y="81.28" smashed="yes">
-<attribute name="NAME" x="256.54" y="93.98" size="2.54" layer="95" font="vector"/>
-<attribute name="VALUE" x="248.92" y="93.98" size="2.54" layer="96" font="vector"/>
+<instance part="X7" gate="G$1" x="66.04" y="198.12" smashed="yes">
+<attribute name="NAME" x="88.9" y="210.82" size="2.54" layer="95" font="vector"/>
+<attribute name="VALUE" x="81.28" y="210.82" size="2.54" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -736,40 +736,40 @@ on breakout board</text>
 <segment>
 <pinref part="X7" gate="G$1" pin="1"/>
 <pinref part="X6" gate="G$1" pin="1VCC"/>
-<wire x1="289.56" y1="86.36" x2="297.18" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="86.36" x2="297.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="203.2" x2="129.54" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="203.2" x2="129.54" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="X7" gate="G$1" pin="2"/>
 <pinref part="X6" gate="G$1" pin="2DATA-"/>
-<wire x1="287.02" y1="83.82" x2="302.26" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="83.82" x2="302.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="200.66" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="200.66" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="X7" gate="G$1" pin="3"/>
 <pinref part="X6" gate="G$1" pin="3DATA+"/>
-<wire x1="284.48" y1="81.28" x2="307.34" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="81.28" x2="307.34" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="198.12" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ID" class="0">
 <segment>
 <pinref part="X7" gate="G$1" pin="4"/>
 <pinref part="X6" gate="G$1" pin="4ID"/>
-<wire x1="281.94" y1="78.74" x2="312.42" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="78.74" x2="312.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="195.58" x2="144.78" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="195.58" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="X7" gate="G$1" pin="5"/>
 <pinref part="X6" gate="G$1" pin="5GND"/>
-<wire x1="279.4" y1="76.2" x2="317.5" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="76.2" x2="317.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="193.04" x2="149.86" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="193.04" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
