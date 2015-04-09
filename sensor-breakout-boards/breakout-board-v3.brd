@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -15,7 +15,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -62,25 +62,25 @@
 <hole x="18.4" y="2.5" drill="3"/>
 <hole x="36.9" y="2.5" drill="3"/>
 <hole x="55.4" y="2.5" drill="3"/>
-<hole x="29.3" y="55.1" drill="3"/>
+<hole x="29.3" y="55.1" drill="4"/>
 <hole x="70.8" y="74.5" drill="3"/>
 <hole x="2.5" y="12.5" drill="3"/>
 <wire x1="0" y1="35" x2="45.5" y2="80.5" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="35" width="0" layer="20"/>
-<wire x1="6" y1="39.2" x2="51.3" y2="39.2" width="1" layer="21"/>
-<wire x1="51.3" y1="39.2" x2="51.3" y2="73.5" width="1" layer="21"/>
-<wire x1="51.3" y1="73.5" x2="40" y2="73.5" width="1" layer="21"/>
-<wire x1="44.7" y1="58.6" x2="52.7" y2="58.6" width="1" layer="21"/>
-<wire x1="52.7" y1="58.6" x2="52.7" y2="51.6" width="1" layer="21"/>
-<wire x1="52.7" y1="51.6" x2="44.7" y2="51.6" width="1" layer="21"/>
-<wire x1="44.7" y1="51.6" x2="44.7" y2="58.6" width="1" layer="21"/>
-<wire x1="5" y1="4.5" x2="73" y2="4.5" width="1" layer="22"/>
-<wire x1="5" y1="4.5" x2="5" y2="14.5" width="1" layer="22"/>
-<wire x1="5" y1="14.5" x2="1" y2="14.5" width="1" layer="22"/>
-<wire x1="68.8" y1="79.5" x2="68.8" y2="69.5" width="1" layer="22"/>
-<wire x1="68.8" y1="69.5" x2="73" y2="69.5" width="1" layer="22"/>
-<wire x1="1" y1="14.5" x2="1" y2="35" width="1" layer="22"/>
-<wire x1="73" y1="4.5" x2="73" y2="69.5" width="1" layer="22"/>
+<wire x1="6" y1="39.2" x2="51.3" y2="39.2" width="0.6096" layer="21"/>
+<wire x1="51.3" y1="39.2" x2="51.3" y2="73.5" width="0.6096" layer="21"/>
+<wire x1="51.3" y1="73.5" x2="40" y2="73.5" width="0.6096" layer="21"/>
+<wire x1="44.7" y1="58.6" x2="52.7" y2="58.6" width="0.6096" layer="21"/>
+<wire x1="52.7" y1="58.6" x2="52.7" y2="51.6" width="0.6096" layer="21"/>
+<wire x1="52.7" y1="51.6" x2="44.7" y2="51.6" width="0.6096" layer="21"/>
+<wire x1="44.7" y1="51.6" x2="44.7" y2="58.6" width="0.6096" layer="21"/>
+<wire x1="5" y1="4.5" x2="73" y2="4.5" width="0.6096" layer="22"/>
+<wire x1="5" y1="4.5" x2="5" y2="14.5" width="0.6096" layer="22"/>
+<wire x1="5" y1="14.5" x2="1" y2="14.5" width="0.6096" layer="22"/>
+<wire x1="68.8" y1="79.5" x2="68.8" y2="69.5" width="0.6096" layer="22"/>
+<wire x1="68.8" y1="69.5" x2="73" y2="69.5" width="0.6096" layer="22"/>
+<wire x1="1" y1="14.5" x2="1" y2="35" width="0.6096" layer="22"/>
+<wire x1="73" y1="4.5" x2="73" y2="69.5" width="0.6096" layer="22"/>
 <wire x1="55" y1="66" x2="55" y2="45" width="1" layer="22"/>
 <wire x1="55" y1="45" x2="53" y2="45" width="1" layer="22"/>
 <wire x1="53" y1="45" x2="53" y2="40" width="1" layer="22"/>
@@ -89,7 +89,6 @@
 <wire x1="55" y1="19" x2="61" y2="19" width="1" layer="22"/>
 <wire x1="61" y1="19" x2="61" y2="66" width="1" layer="22"/>
 <wire x1="61" y1="66" x2="55" y2="66" width="1" layer="22"/>
-<text x="3.75" y="15.3" size="2.54" layer="21" font="vector" rot="R90">#3-48</text>
 <wire x1="69.5" y1="50" x2="73" y2="50" width="0.5" layer="21"/>
 <wire x1="73" y1="50" x2="73" y2="35" width="0.5" layer="21"/>
 <wire x1="73" y1="35" x2="69.5" y2="35" width="0.5" layer="21"/>
@@ -99,8 +98,7 @@
 <text x="68" y="44.5" size="2.54" layer="21" font="vector" rot="R90">2</text>
 <text x="68" y="41.5" size="2.54" layer="21" font="vector" rot="R90">3</text>
 <text x="68" y="39" size="2.54" layer="21" font="vector" rot="R90">4</text>
-<text x="23" y="50" size="2.54" layer="21" font="vector">#3-48</text>
-<text x="72" y="61" size="2.54" layer="21" font="vector" rot="R90">#3-48</text>
+<text x="72" y="60" size="2.54" layer="21" font="vector" rot="R90">#3-48</text>
 <rectangle x1="16.7875" y1="18.1375" x2="16.8875" y2="18.1625" layer="21"/>
 <rectangle x1="16.9625" y1="18.1375" x2="16.9875" y2="18.1625" layer="21"/>
 <rectangle x1="17.0875" y1="18.1375" x2="17.1625" y2="18.1625" layer="21"/>
@@ -11398,6 +11396,7 @@
 <wire x1="63" y1="73" x2="63" y2="77" width="0.5" layer="21"/>
 <wire x1="53" y1="80" x2="51" y2="80" width="0.5" layer="21"/>
 <wire x1="63" y1="80" x2="65" y2="80" width="0.5" layer="21"/>
+<text x="4" y="15" size="2.54" layer="21" font="vector" rot="R90">#3-48</text>
 </plain>
 <libraries>
 <library name="sensor-breakout-boards">
@@ -11882,23 +11881,56 @@ design rules under a new name.</description>
 <signal name="ID">
 <contactref element="X7" pad="4"/>
 <contactref element="X6" pad="4"/>
-<wire x1="57.2" y1="74.65" x2="57.2" y2="74.7" width="0.6096" layer="16"/>
-<wire x1="57.2" y1="74.7" x2="56.7" y2="75.2" width="0.6096" layer="16"/>
-<wire x1="56.7" y1="75.2" x2="55.6" y2="75.2" width="0.6096" layer="16"/>
-<wire x1="55.6" y1="75.2" x2="54.7" y2="74.3" width="0.6096" layer="16"/>
+<wire x1="56.7" y1="75.2" x2="55.6" y2="75.2" width="0.6096" layer="1"/>
+<wire x1="55.6" y1="75.2" x2="54.7" y2="74.3" width="0.6096" layer="1"/>
 <wire x1="71.31" y1="39.96" x2="71.31" y2="39.99" width="0.6096" layer="16"/>
-<wire x1="66.2" y1="59.4" x2="54.7" y2="70.9" width="0.6096" layer="16"/>
-<wire x1="54.7" y1="70.9" x2="54.7" y2="74.3" width="0.6096" layer="16"/>
-<wire x1="66.2" y1="59.4" x2="66.2" y2="45.07" width="0.6096" layer="16"/>
-<wire x1="66.2" y1="45.07" x2="71.31" y2="39.96" width="0.6096" layer="16"/>
+<wire x1="66.2" y1="59.4" x2="54.7" y2="70.9" width="0.6096" layer="1"/>
+<wire x1="54.7" y1="70.9" x2="54.7" y2="74.3" width="0.6096" layer="1"/>
+<wire x1="66.2" y1="59.4" x2="66.2" y2="45.07" width="0.6096" layer="1"/>
+<wire x1="66.2" y1="45.07" x2="71.31" y2="39.96" width="0.6096" layer="1"/>
+<wire x1="56.7" y1="75.2" x2="56.7" y2="75.15" width="0.6096" layer="1"/>
+<wire x1="56.7" y1="75.15" x2="57.2" y2="74.65" width="0.6096" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="X7" pad="5"/>
 <contactref element="X6" pad="5"/>
-<wire x1="56.4" y1="73.45" x2="56.4" y2="71.4" width="0.6096" layer="1"/>
-<wire x1="56.4" y1="71.4" x2="64.8" y2="63" width="0.6096" layer="1"/>
-<wire x1="64.8" y1="63" x2="64.8" y2="43.93" width="0.6096" layer="1"/>
-<wire x1="64.8" y1="43.93" x2="71.31" y2="37.42" width="0.6096" layer="1"/>
+<contactref element="X5" pad="11"/>
+<contactref element="X5" pad="33"/>
+<contactref element="X5" pad="23"/>
+<contactref element="X5" pad="12"/>
+<contactref element="X5" pad="34"/>
+<contactref element="X5" pad="24"/>
+<polygon width="0" layer="16" isolate="0.5">
+<vertex x="73" y="80"/>
+<vertex x="46" y="80"/>
+<vertex x="1" y="35"/>
+<vertex x="1" y="1"/>
+<vertex x="73" y="1"/>
+</polygon>
+<polygon width="0" layer="1" isolate="0.5">
+<vertex x="73" y="80"/>
+<vertex x="46" y="80"/>
+<vertex x="1" y="35"/>
+<vertex x="1" y="1"/>
+<vertex x="73" y="1"/>
+</polygon>
+<via x="4" y="19" extent="1-16" drill="1"/>
+<via x="4" y="34" extent="1-16" drill="1"/>
+<via x="18" y="13" extent="1-16" drill="1"/>
+<via x="33" y="16" extent="1-16" drill="1"/>
+<via x="39" y="11" extent="1-16" drill="1"/>
+<via x="52" y="18" extent="1-16" drill="1"/>
+<via x="57" y="12" extent="1-16" drill="1"/>
+<via x="71" y="12" extent="1-16" drill="1"/>
+<via x="52" y="33" extent="1-16" drill="1"/>
+<via x="28" y="36" extent="1-16" drill="1"/>
+<via x="20" y="49" extent="1-16" drill="1"/>
+<via x="41" y="46" extent="1-16" drill="1"/>
+<via x="52" y="44" extent="1-16" drill="1"/>
+<via x="35" y="63" extent="1-16" drill="1"/>
+<via x="47" y="75" extent="1-16" drill="1"/>
+<via x="66" y="75" extent="1-16" drill="1"/>
+<via x="71" y="70" extent="1-16" drill="1"/>
 </signal>
 </signals>
 </board>
