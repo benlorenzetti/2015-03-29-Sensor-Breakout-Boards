@@ -60,10 +60,10 @@
 <wire x1="24" y1="0" x2="24" y2="30" width="0" layer="20"/>
 <wire x1="24" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
-<text x="7.112" y="7.62" size="0.8128" layer="21">CE</text>
-<text x="10.414" y="7.62" size="0.8128" layer="21">WE2</text>
-<text x="13.462" y="7.62" size="0.8128" layer="21">RE</text>
-<text x="16.002" y="7.62" size="0.8128" layer="21">WE1</text>
+<text x="6.112" y="8.62" size="0.8128" layer="21">CE</text>
+<text x="9.164" y="8.62" size="0.8128" layer="21">WE2</text>
+<text x="12.962" y="8.62" size="0.8128" layer="21">RE</text>
+<text x="16.002" y="8.62" size="0.8128" layer="21">WE1</text>
 </plain>
 <libraries>
 <library name="sensor-breakout-boards">
